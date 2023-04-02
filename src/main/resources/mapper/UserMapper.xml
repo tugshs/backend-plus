@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hfyang.backendPlus.mapper.UserMapper">
+  <resultMap id="BaseResultMap" type="com.hfyang.backendPlus.entity.User">
+    <!--@mbg.generated-->
+    <!--@Table `user`-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="user_email" jdbcType="VARCHAR" property="userEmail" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="user_password" jdbcType="VARCHAR" property="userPassword" />
+    <result column="user_account" jdbcType="VARCHAR" property="userAccount" />
+    <result column="user_gender" jdbcType="VARCHAR" property="userGender" />
+    <result column="user_age" jdbcType="TINYINT" property="userAge" />
+    <result column="user_tags" jdbcType="VARCHAR" property="userTags" />
+    <result column="is_root" jdbcType="BOOLEAN" property="isRoot" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, user_email, user_name, user_password, user_account, user_gender, user_age, user_tags, 
+    is_root, create_time, update_time
+  </sql>
+</mapper>
